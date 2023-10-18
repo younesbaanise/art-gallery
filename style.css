@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+header {
+    display: flex;
+}
+
+header .parent {
+    width: 990px;
+    background-color: black;
+    height: 800px;
+}
+
+header .parent img {
+    position: relative;
+    width: 540px;
+    float: right;
+}
+
+
+header div > span {
+    color: white;
+    font-weight: 800;
+}
+
+header .parent .text {
+    font-size: 96px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: 165px;
+    line-height: 88px;
+    margin-top: 189px;
+}
+
+header .parent .text .lery {
+    color: black;
+}
+
+article {
+    max-width: 350px;
+    position: absolute;
+    right: 75px;
+    top: 249px;
+    line-height: 24px;
+}
+
+article  > p {
+    color: #444444;
+}
+
+article a button {
+    width: 200px;
+    height: 65px;
+    border: none;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: all .5s;
+}
+
+article .button .position {
+    width: 54px;
+    height: 65px;
+    border: none;
+    background-color: #D5966C;
+    padding: 20px;
+    position: absolute;
+    top: 112px;
+    right: 96px;
+    transition: all .5s;
+}
+
+article .button:hover button {
+    background-color: #D5966C;
+    color: white;
+}
+
+article .button:hover .position {
+    background-color: black;
+    color: white;
+}
+
+section {
+    box-sizing: border-box;
+    display: grid;
+    gap: 10px;
+    margin: 0px auto;
+    width: 100%;
+    grid-template-columns: 2fr 1.5fr 2.2fr;
+    grid-auto-rows: minmax(300px, auto);
+    gap: 30px;
+    justify-content: center;
+    padding: 150px;
+}
+
+section .grid img {
+    width: 100%;
+    height: 100%;
+    image-rendering: optimizeQuality;
+}
+
+section .first {
+    padding: 50px 80px;
+}
+
+section h1 {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 46px;
+}
+
+section p {
+    line-height: 28px;
+}
+
+section .second {
+    grid-column: 2/4;
+}
+
+section .third {
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+section .fifth {
+    grid-column: 3/4;
+    background-color: black;
+    color: white;
+    padding: 60px 40px 60px 50px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+    align-items: center;
+}
+
+footer .title {
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+footer .para {
+    max-width: 400px;
+    color: #808080;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+footer .social-links img {
+    cursor: pointer;
+    margin-left: 10px;
+}
